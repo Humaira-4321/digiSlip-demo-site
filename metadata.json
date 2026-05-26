@@ -1,0 +1,6 @@
+{
+  "name": "DigiSlip",
+  "description": "Pakistan's premium WhatsApp-first digital receipt and loyalty rewards platform converting physical slips instantly.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

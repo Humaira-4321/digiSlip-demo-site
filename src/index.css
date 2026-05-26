@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom DigiSlip Dark Navy color variables */
+  --color-navy-950: #07172E;
+  --color-navy-900: #0D2040;
+  --color-navy-800: #1B355A;
+  --color-navy-700: #2C4D75;
+  --color-navy-600: #426794;
+  --color-sky-400: #38BDF8;
+}
+
+/* Force flat, straight box border-radius across all buttons, inputs, panels, cards */
+*, *::before, *::after {
+  border-radius: 0px !important;
+}
+
+/* Custom visual scanline animation for camera simulation */
+@keyframes scan {
+  0% { transform: translateY(-100%); opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { transform: translateY(100%); opacity: 0.8; }
+}
+
+.animate-scan {
+  animation: scan 2.5s ease-in-out infinite;
+}
+
+/* Smooth custom slide effects */
+.receipt-paper {
+  box-shadow: 0 10px 30px -10px rgba(7, 23, 46, 0.4);
+}
+
